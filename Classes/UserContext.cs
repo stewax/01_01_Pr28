@@ -1,5 +1,5 @@
 ﻿using Kino_Kazakov.Classes.Common;
-using Kino_Kazakov.Models
+using Kino_Kazakov.Models;
 
 using Microsoft.EntityFrameworkCore;
 
