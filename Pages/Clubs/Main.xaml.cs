@@ -21,12 +21,12 @@ namespace Kino_Kazakov.Pages.Clubs
     /// </summary>
     public partial class Main : Page
     {
-        public ClubsContext AllClub = new ClubsContext;
+        public ClubsContext AllClub = new();
         public Main()
         {
             InitializeComponent();
             foreach (Models.Clubs Club in AllClub.Clubs)
-                Parent.Children.Add(new Elements.Item(Club, this);
+                Parent.Children.Add(new Elements.Item(Club, this));
         }
 
         private void AddClub(object sender, RoutedEventArgs e)
