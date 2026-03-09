@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Click="Clubs" Height="25" Content="Клубы" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10 10 0 0" Width="100" Background="#FF46FD00" Foreground="White" BorderBrush="#FF46FD00" />
+        <Button Click="Users" Height="25" Content="Пользователи" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="115 10 0 0" Width="100" Background="#FF46FD00" Foreground="White" BorderBrush="#FF46FD00" />
+        <Frame x:Name="frame" Visibility="Hidden" Margin="0 40 0 0"/>
     </Grid>
 </Window>

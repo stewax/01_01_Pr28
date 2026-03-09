@@ -20,6 +20,23 @@ namespace Kino_Kazakov
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
+
+            OpenPages(new Pages.Clubs.Main());
+        }
+
+        public void OpenPages(Page Page){
+            frame.Navigate(Page);
+        }
+
+        private void Clubs(object sender, RoutedEventArgs e)
+        {
+            OpenPages(new Pages.Clubs.Main());
+        }
+
+        private void Users(object sender, RoutedEventArgs e)
+        {
+            OpenPages(new Pages.Clubs.Main());
         }
     }
 }
