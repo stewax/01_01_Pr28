@@ -6,13 +6,30 @@
       xmlns:local="clr-namespace:Kino_Kazakov.Pages.Clubs"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Main">
+      Title="Main" Loaded="Page_Loaded">
 
     <Grid>
         <Grid Margin="20" Background="#FFF0F0F0">
-            <ScrollViewer Margin="0 0 0 50">
-                <StackPanel x:Name="Parent"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
+                <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                    <Label Content="Поиск по названию:"/>
+                    <TextBox x:Name="TBoxSearch" Width="250" TextChanged="FilterChanged"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Сортировка:"/>
+                    <ComboBox x:Name="CBoxSort" Width="150" SelectionChanged="FilterChanged">
+                        <ComboBoxItem Content="По умолчанию"/>
+                        <ComboBoxItem Content="Название (А-Я)"/>
+                        <ComboBoxItem Content="Название (Я-А)"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+
+            <ScrollViewer Margin="0 60 0 50">
+                <StackPanel x:Name="ParentView"/>
             </ScrollViewer>
+
             <Button
                 x:Name="BtnAdd"
                 Click="AddClub"

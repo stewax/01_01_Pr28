@@ -28,7 +28,8 @@ namespace Kino_Kazakov.Pages.Users.Elements
 
         Models.Users User;
 
-        public Item(Main Main, Models.Users User) { 
+        public Item(Main Main, Models.Users User)
+        {
             InitializeComponent();
 
             this.User = User;
@@ -49,9 +50,12 @@ namespace Kino_Kazakov.Pages.Users.Elements
 
         private void DeleteUser(object sender, RoutedEventArgs e)
         {
+            // Удаляем из базы данных
             Main.AllUsers.Users.Remove(User);
             Main.AllUsers.SaveChanges();
-            Main.Parent.Children.Remove(this);
+
+            // Удаляем визуально из списка ParentView
+            Main.ParentView.Children.Remove(this);
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Kino_Kazakov.Pages.Clubs.Elements
         {
             Main.AllClub.Clubs.Remove(Club);
             Main.AllClub.SaveChanges();
-            Main.Parent.Children.Remove(this);
+            Main.ParentView.Children.Remove(this);
         }
     }
 }
