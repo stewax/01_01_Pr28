@@ -1,12 +1,12 @@
-﻿<Window x:Class="Kino_Kazakov.Pages.Clubs.Add"
+﻿<Page x:Class="Kino_Kazakov.Pages.Clubs.Add"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Kino_Kazakov.Pages.Clubs"
       mc:Ignorable="d" 
-      Title="MainWindow" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+      Title="Add" Height="450" Width="800"
+      Background="White">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -14,69 +14,45 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Верхние кнопки -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,20">
-            <Button Content="Клубы" Width="100" Height="35" 
-                    Background="#4AE10B" Foreground="White" 
-                    BorderThickness="0" Margin="0,0,10,0"
-                    Cursor="Hand"/>
-            <Button Content="Пользователи" Width="120" Height="35" 
-                    Background="#4AE10B" Foreground="White" 
-                    BorderThickness="0"
-                    Cursor="Hand"/>
-        </StackPanel>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,20"/>
 
-        <!-- Основная форма -->
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Левая часть с иконкой и кнопкой -->
             <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="0,20,20,0">
-                <!-- Иконка компьютера -->
-                <Image Width="80" Height="80" VerticalAlignment="Top" Margin="10" Source="/Images/ic-manicon.png"/>    
+                <Image Width="80" Height="80" VerticalAlignment="Top" Margin="10" Source="/Images/ic-pcicon.png"/>
 
-                <!-- Иконка (символ компьютера) -->
-                <Viewbox Width="80" Height="80" Margin="-80,-80,0,0">
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Viewbox>
-
-                <!-- Кнопка Добавить -->
-                <Button x:Name="BtnAdd" Content="Добавить" Width="100" Height="35" 
+                <Button x:Name="BtnAdd" Content="Добавить" Click="AddClub"
+                        Width="100" Height="35" 
                         Background="#4AE10B" Foreground="White" 
                         BorderThickness="0" Margin="0,20,0,0"
                         Cursor="Hand" HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <!-- Правая часть с полями ввода -->
             <Grid Grid.Column="1" Margin="20,20,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Наименование -->
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="Наименование:" 
                            VerticalAlignment="Center" Margin="0,0,10,10"/>
                 <TextBox x:Name="Name" Grid.Row="0" Grid.Column="1" Height="25" 
-                         Margin="0,0,0,10"/>
+                         Margin="0,0,0,10" VerticalContentAlignment="Center"/>
 
-                <!-- Адрес -->
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="Адрес:" 
                            VerticalAlignment="Center" Margin="0,0,10,10"/>
                 <TextBox x:Name="Address" Grid.Row="1" Grid.Column="1" Height="25" 
-                         Margin="0,0,0,10"/>
+                         Margin="0,0,0,10" VerticalContentAlignment="Center"/>
 
-                <!-- Время работы -->
                 <TextBlock Grid.Row="2" Grid.Column="0" Text="Время работы:" 
                            VerticalAlignment="Top" Margin="0,0,10,10"/>
                 <TextBox x:Name="WorkTime" Grid.Row="2" Grid.Column="1" Height="80" 
@@ -85,4 +61,4 @@
             </Grid>
         </Grid>
     </Grid>
-</Window>
+</Page>

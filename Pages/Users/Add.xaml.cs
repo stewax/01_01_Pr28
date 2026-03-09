@@ -42,7 +42,15 @@ namespace Kino_Kazakov.Pages.Users
                 this.RentStart.Text = User.RentStart.ToString("yyyy-MM-dd");
                 this.RentStart.Text = User.RentStart.ToString("HH-mm");
                 this.Duration.Text = User.Duration.ToString();
-                Clubs.SelectedItem = AllClub.Clubs.Where(x => x.Id == User.IdClub).First().Name;
+                var currentClub = AllClub.Clubs.FirstOrDefault(x => x.Id == User.IdClub);
+                if (currentClub != null)
+                {
+                    Clubs.SelectedItem = currentClub.Name;
+                }
+                else
+                {
+                    Clubs.SelectedIndex = Clubs.Items.Count - 1; // Устанавливаем "Выберите ..." или пустой пункт
+                }
 
                 BthAdd.Content = "Изменить";
             }

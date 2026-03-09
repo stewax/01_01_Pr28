@@ -36,7 +36,7 @@ namespace Kino_Kazakov
 
         private void Users(object sender, RoutedEventArgs e)
         {
-            OpenPages(new Pages.Clubs.Main());
+            OpenPages(new Pages.Users.Main());
         }
     }
 }

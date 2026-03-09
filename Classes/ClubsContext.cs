@@ -4,9 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kino_Kazakov.Classes
 {
-    public class ClubsContext:DbContext
+    public class ClubsContext : DbContext
     {
+        // Все таблицы проекта должны быть здесь
         public DbSet<Clubs> Clubs { get; set; }
+        public DbSet<Users> Users { get; set; }
 
         public ClubsContext()
         {

@@ -24,7 +24,7 @@ namespace Kino_Kazakov.Pages.Users.Elements
     {
         public ClubsContext AllClub = new();
 
-        Pages.Clubs.Main Main;
+        Pages.Users.Main Main;
 
         Models.Users User;
 
@@ -38,7 +38,8 @@ namespace Kino_Kazakov.Pages.Users.Elements
             this.RentStart.Text = User.RentStart.ToString("yyyy-MM-dd");
             this.RentTime.Text = User.RentStart.ToString("HH-mm");
             this.Duration.Text = User.Duration.ToString();
-            this.Club.Text = AllClub.Clubs.Where(x => x.Id == User.IdClub).First().Name;
+            var club = AllClub.Clubs.FirstOrDefault(x => x.Id == User.IdClub);
+            this.Club.Text = club != null ? club.Name : "Клуб удален";
         }
 
         private void EditUser(object sender, RoutedEventArgs e)
@@ -48,8 +49,8 @@ namespace Kino_Kazakov.Pages.Users.Elements
 
         private void DeleteUser(object sender, RoutedEventArgs e)
         {
-            Main.AllUsers.User.Remove(User);
-            Main.AllUser.SaveChanges();
+            Main.AllUsers.Users.Remove(User);
+            Main.AllUsers.SaveChanges();
             Main.Parent.Children.Remove(this);
         }
     }
