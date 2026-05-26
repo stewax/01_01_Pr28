@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kino_Kazakov.Models
+namespace Kino_Osennikov.Models
 {
     public class Users
     {

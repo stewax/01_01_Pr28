@@ -1,5 +1,5 @@
-﻿using Kino_Kazakov.Classes;
-using Kino_Kazakov.Pages.Clubs;
+﻿using Kino_Osennikov.Classes;
+using Kino_Osennikov.Pages.Clubs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kino_Kazakov.Pages.Users.Elements
+namespace Kino_Osennikov.Pages.Users.Elements
 {
     /// <summary>
     /// Логика взаимодействия для Elements.xaml

@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kino_Kazakov.Pages.Clubs
+namespace Kino_Osennikov.Pages.Clubs
 {
     /// <summary>
     /// Логика взаимодействия для Add.xaml

@@ -1,11 +1,11 @@
-﻿using Kino_Kazakov.Classes;
+﻿using Kino_Osennikov.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Kino_Kazakov.Pages.Users
+namespace Kino_Osennikov.Pages.Users
 {
     public partial class Main : Page
     {

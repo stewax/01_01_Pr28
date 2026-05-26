@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kino_Kazakov.Pages.Clubs.Elements
+namespace Kino_Osennikov.Pages.Clubs.Elements
 {
     /// <summary>
     /// Логика взаимодействия для Item.xaml

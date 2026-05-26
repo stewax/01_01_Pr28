@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using Kino_Kazakov.Classes;
+using Kino_Osennikov.Classes;
 
-namespace Kino_Kazakov.Pages.Clubs
+namespace Kino_Osennikov.Pages.Clubs
 {
     public partial class Main : Page
     {

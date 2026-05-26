@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Kino_Kazakov
+namespace Kino_Osennikov
 {
     /// <summary>
     /// Interaction logic for App.xaml

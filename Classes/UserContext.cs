@@ -1,9 +1,9 @@
-﻿//using Kino_Kazakov.Classes.Common;
-//using Kino_Kazakov.Models;
+﻿//using Kino_Osennikov.Classes.Common;
+//using Kino_Osennikov.Models;
 
 //using Microsoft.EntityFrameworkCore;
 
-//namespace Kino_Kazakov.Classes
+//namespace Kino_Osennikov.Classes
 //{
 //    public class UserContext:DbContext
 //    {

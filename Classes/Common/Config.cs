@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Kino_Kazakov.Classes.Common
+namespace Kino_Osennikov.Classes.Common
 {
     public class Config
     {
